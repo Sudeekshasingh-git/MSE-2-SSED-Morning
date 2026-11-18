@@ -60,6 +60,9 @@ services:
 
   frontend:
     image: ${DOCKERHUB_USERNAME:?DOCKERHUB_USERNAME is required}/frontend:latest
+    environment:
+      BACKEND_ORIGIN: ${BACKEND_ORIGIN:-http://backend:3000}
+      NGINX_ENVSUBST_FILTER: "BACKEND_ORIGIN"
     ports:
       - "8080:80"
     depends_on:

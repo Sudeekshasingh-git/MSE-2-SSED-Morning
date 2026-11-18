@@ -64,6 +64,9 @@ services:
     image: ${DOCKERHUB_USERNAME:-local}/frontend:latest
     build:
       context: ./frontend
+    environment:
+      BACKEND_ORIGIN: ${BACKEND_ORIGIN:-http://backend:3000}
+      NGINX_ENVSUBST_FILTER: "BACKEND_ORIGIN"
     ports:
       - "8080:80"
     depends_on:
