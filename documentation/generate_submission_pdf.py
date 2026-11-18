@@ -90,9 +90,9 @@ story = [
     Spacer(1, 6 * mm),
     Paragraph("3. Docker Hub Details", styles["Section"]),
     info_table([
-        ["Docker Hub Username", "shreyaspandeyy"],
-        ["Frontend Image", '<link href="https://hub.docker.com/r/shreyaspandeyy/frontend" color="#1565c0">shreyaspandeyy/frontend:latest</link>'],
-        ["Backend Image", '<link href="https://hub.docker.com/r/shreyaspandeyy/backend" color="#1565c0">shreyaspandeyy/backend:latest</link>'],
+        ["Docker Hub Username", "sudeekshasingh"],
+        ["Frontend Image", '<link href="https://hub.docker.com/r/sudeekshasingh/frontend" color="#1565c0">sudeekshasingh/frontend:latest</link>'],
+        ["Backend Image", '<link href="https://hub.docker.com/r/sudeekshasingh/backend" color="#1565c0">sudeekshasingh/backend:latest</link>'],
     ]),
     PageBreak(),
     Paragraph("Docker Hub Image Evidence", styles["TitleBlue"]),
